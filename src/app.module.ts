@@ -6,6 +6,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { UsersModule } from './modules/admin/users/users.module';
 import { RolesModule } from './modules/admin/roles/roles.module';
 import { PermissionsModule } from './modules/admin/permissions/permissions.module';
+import { SeedModule } from './database/seeders/seed.module';
 
 console.log(__dirname + '/**/*.entity{.ts,.js}');
 
@@ -22,6 +23,7 @@ console.log(__dirname + '/**/*.entity{.ts,.js}');
       entities: [__dirname + '/**/*.entity{.ts,.js}'],
       synchronize: false
     }),
+    SeedModule,
     UsersModule,
     RolesModule,
     PermissionsModule
