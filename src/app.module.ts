@@ -4,6 +4,7 @@ import { AppService } from './app.service';
 import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { UsersModule } from './modules/admin/users/users.module';
+import { RolesModule } from './modules/admin/roles/roles.module';
 
 console.log(__dirname + '/**/*.entity{.ts,.js}');
 
@@ -20,7 +21,8 @@ console.log(__dirname + '/**/*.entity{.ts,.js}');
       entities: [__dirname + '/**/*.entity{.ts,.js}'],
       synchronize: false
     }),
-    UsersModule
+    UsersModule,
+    RolesModule
   ],
   controllers: [AppController],
   providers: [AppService],
