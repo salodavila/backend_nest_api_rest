@@ -7,6 +7,8 @@ import { UsersModule } from './modules/admin/users/users.module';
 import { RolesModule } from './modules/admin/roles/roles.module';
 import { PermissionsModule } from './modules/admin/permissions/permissions.module';
 import { SeedModule } from './database/seeders/seed.module';
+import { AuthModule } from './modules/auth/auth.module';
+import { AuthService } from './modules/auth/auth.service';
 
 console.log(__dirname + '/**/*.entity{.ts,.js}');
 
@@ -26,9 +28,10 @@ console.log(__dirname + '/**/*.entity{.ts,.js}');
     SeedModule,
     UsersModule,
     RolesModule,
-    PermissionsModule
+    PermissionsModule,
+    AuthModule
   ],
   controllers: [AppController],
-  providers: [AppService],
+  providers: [AppService, AuthService],
 })
 export class AppModule {}
