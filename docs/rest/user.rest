@@ -1,0 +1,33 @@
+GET http://127.0.0.1:9000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkFkbWluIiwiaWQiOiIxOTBlYjE1Ny1lNGNlLTQ1ZTYtODBlMy1lYjljNjdlMzE0YmUiLCJyb2xlcyI6WyJBZG1pbiJdLCJpYXQiOjE3NzE4MDE3MzUsImV4cCI6MTc3MTgwNTMzNX0.3J6DT-EQLKzFU0b13IrYLCbRvpOCBEnLhOraDWLzJoo
+
+###
+POST http://127.0.0.1:9000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkFkbWluIiwiaWQiOiIxOTBlYjE1Ny1lNGNlLTQ1ZTYtODBlMy1lYjljNjdlMzE0YmUiLCJyb2xlcyI6WyJBZG1pbiJdLCJpYXQiOjE3NzE4MDE3MzUsImV4cCI6MTc3MTgwNTMzNX0.3J6DT-EQLKzFU0b13IrYLCbRvpOCBEnLhOraDWLzJoo
+Content-Type: application/json
+
+{
+    "username": "ana1",
+    "email": "ana1@mail.com",
+    "password": "ana154321"
+}
+
+
+###
+GET http://127.0.0.1:9000/users/8bc4ce35-e287-407e-9dea-21d9af047c2a
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkFkbWluIiwiaWQiOiIxOTBlYjE1Ny1lNGNlLTQ1ZTYtODBlMy1lYjljNjdlMzE0YmUiLCJyb2xlcyI6WyJBZG1pbiJdLCJpYXQiOjE3NzE4MDE3MzUsImV4cCI6MTc3MTgwNTMzNX0.3J6DT-EQLKzFU0b13IrYLCbRvpOCBEnLhOraDWLzJoo
+
+###
+PATCH http://127.0.0.1:9000/users/8bc4ce35-e287-407e-9dea-21d9af047c2a
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkFkbWluIiwiaWQiOiIxOTBlYjE1Ny1lNGNlLTQ1ZTYtODBlMy1lYjljNjdlMzE0YmUiLCJyb2xlcyI6WyJBZG1pbiJdLCJpYXQiOjE3NzE4MDE3MzUsImV4cCI6MTc3MTgwNTMzNX0.3J6DT-EQLKzFU0b13IrYLCbRvpOCBEnLhOraDWLzJoo
+Content-Type: application/json
+
+{   
+    "username": "ana",
+    "email": "ana@mail.com"
+}
+
+###
+DELETE http://127.0.0.1:9000/users/340c7059-fc5e-4b6d-9723-b0f912b24035
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkFkbWluIiwiaWQiOiIxOTBlYjE1Ny1lNGNlLTQ1ZTYtODBlMy1lYjljNjdlMzE0YmUiLCJyb2xlcyI6WyJBZG1pbiJdLCJpYXQiOjE3NzE4MDE3MzUsImV4cCI6MTc3MTgwNTMzNX0.3J6DT-EQLKzFU0b13IrYLCbRvpOCBEnLhOraDWLzJoo
+

@@ -14,6 +14,7 @@ async function bootstrap() {
 
   //swagger
   const config = new DocumentBuilder()
+    .addBearerAuth()
     .setTitle('API Rest Backend Nest')
     .setDescription('Esta es la api backend')
     .setVersion('1.0')
